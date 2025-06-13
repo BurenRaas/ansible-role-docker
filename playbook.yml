@@ -1,5 +1,5 @@
-- name: Installeer en test Docker op webservers
-  hosts: webserver
+- name: Installeer Docker op all hosts
+  hosts: all
   become: yes
   roles:
     - install_docker_hello
